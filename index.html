@@ -100,7 +100,7 @@
       <li>Checklist de documentos e passo a passo simples</li>
       <li>Linguagem fácil, direto ao ponto, sem enrolação</li>
     </ul>
-    <a href="#oferta" class="btn">QUERO MEU GUIA AGORA <small>Acesso imediato por R$ 19,90</small></a>
+    <a href="https://app.abacatepay.com/pay/bill_sXwqL5cMWnG1w5B2BHX2qcEN" class="btn">QUERO MEU GUIA AGORA <small>Acesso imediato por R$ 19,90</small></a>
   </div>
 </header>
 
@@ -145,26 +145,17 @@
       <div class="price"><small>R$</small> 19<small>,90</small></div>
       <p class="price-note">Pagamento único • Pix ou cartão</p>
 
-      <!-- ORDER BUMP 1 -->
-      <label class="bump">
-        <input type="checkbox" id="bump1">
+      <!-- BÔNUS (ofertas exibidas no checkout) -->
+      <div class="bump">
         <span>
-          <span class="bt">➕ Adicionar: Kit Limpa Nome &amp; Turbina Score</span> — <span class="bp">+ R$ 9,90</span><br>
-          <small>Passo a passo para negociar dívidas com até 90% de desconto e fazer seu score subir em 30 dias. O complemento perfeito do guia.</small>
+          <span class="bt">🎁 No checkout você ainda pode adicionar 2 bônus:</span><br>
+          <small><b>Kit Limpa Nome &amp; Turbina Score</b> (+R$ 9,90) — negociar dívidas com desconto e subir o score em 30 dias.<br>
+          <b>Comprova Renda do Motorista</b> (+R$ 12,90) — modelos de declaração de renda e planilha de ganhos para o banco.</small>
         </span>
-      </label>
+      </div>
 
-      <!-- ORDER BUMP 2 -->
-      <label class="bump">
-        <input type="checkbox" id="bump2">
-        <span>
-          <span class="bt">➕ Adicionar: Pacote Comprova Renda do Motorista</span> — <span class="bp">+ R$ 12,90</span><br>
-          <small>Modelos prontos de declaração de renda + planilha de ganhos para imprimir/preencher e apresentar no banco. Ideal para quem é informal.</small>
-        </span>
-      </label>
-
-      <a href="#" id="checkout" class="btn" style="margin-top:18px">
-        GARANTIR MEU ACESSO <small id="totalLabel">Total: R$ 19,90</small>
+      <a href="https://app.abacatepay.com/pay/bill_sXwqL5cMWnG1w5B2BHX2qcEN" id="checkout" class="btn" style="margin-top:18px">
+        GARANTIR MEU ACESSO <small>Pagamento seguro • Pix ou cartão</small>
       </a>
 
       <div class="guarantee">
@@ -194,7 +185,7 @@
       <details><summary>Preciso entender de computador?</summary>
         <p>Não. É escrito em linguagem simples, com passo a passo. Se você usa o app de motorista, consegue usar o guia.</p></details>
     </div>
-    <a href="#oferta" class="btn" style="margin-top:22px">QUERO COMEÇAR AGORA <small>Acesso imediato por R$ 19,90</small></a>
+    <a href="https://app.abacatepay.com/pay/bill_sXwqL5cMWnG1w5B2BHX2qcEN" class="btn" style="margin-top:22px">QUERO COMEÇAR AGORA <small>Acesso imediato por R$ 19,90</small></a>
   </div>
 </section>
 
@@ -208,34 +199,6 @@
   © 2026 • MOVE MOTORISTA • Todos os direitos reservados
 </footer>
 
-<script>
-  // >>> Cole aqui os links de checkout do Abacate Pay <<<
-  var CHECKOUT = {
-    base:  "https://pay.abacatepay.com/SEU-LINK-BASE",        // só o guia (R$19,90)
-    b1:    "https://pay.abacatepay.com/SEU-LINK-BUMP1",        // guia + bump1
-    b2:    "https://pay.abacatepay.com/SEU-LINK-BUMP2",        // guia + bump2
-    b12:   "https://pay.abacatepay.com/SEU-LINK-BUMP1E2"       // guia + bump1 + bump2
-  };
-  var b1 = document.getElementById('bump1');
-  var b2 = document.getElementById('bump2');
-  var label = document.getElementById('totalLabel');
-  var btn = document.getElementById('checkout');
-
-  function fmt(v){ return 'R$ ' + v.toFixed(2).replace('.', ','); }
-  function update(){
-    var total = 19.90;
-    var key = 'base';
-    if(b1.checked) total += 9.90;
-    if(b2.checked) total += 12.90;
-    if(b1.checked && b2.checked) key='b12';
-    else if(b1.checked) key='b1';
-    else if(b2.checked) key='b2';
-    label.textContent = 'Total: ' + fmt(total);
-    btn.setAttribute('href', CHECKOUT[key]);
-  }
-  b1.addEventListener('change', update);
-  b2.addEventListener('change', update);
-  update();
-</script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
